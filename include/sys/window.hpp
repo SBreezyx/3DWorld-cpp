@@ -25,7 +25,7 @@ namespace sys {
 
         [[nodiscard]] auto closed() const noexcept -> bool;
 
-        auto render() -> void;
+        auto refresh() -> void;
 
     private:
         GLFWwindow *win_;

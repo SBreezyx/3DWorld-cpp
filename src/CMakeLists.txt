@@ -1,8 +1,11 @@
 add_executable(main)
 target_sources(main
         PUBLIC
-        main.cpp window.cpp
         ${PROJECT_INCLUDE_DIR}/sys/window.hpp
+        ${PROJECT_INCLUDE_DIR}/gl/shader.hpp
+        ${PROJECT_INCLUDE_DIR}/gl/program.hpp
+        ${PROJECT_INCLUDE_DIR}/gl/vao.hpp
+        main.cpp window.cpp shader.cpp program.cpp vao.cpp
         )
 
 target_include_directories(main

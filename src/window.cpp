@@ -53,10 +53,8 @@ namespace sys {
         return glfwWindowShouldClose(win_);
     }
 
-    auto window::render() -> void
+    auto window::refresh() -> void
     {
-        glClear(GL_COLOR_BUFFER_BIT);
-
         glfwSwapBuffers(win_);
 
         glfwPollEvents();
